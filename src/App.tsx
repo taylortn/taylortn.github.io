@@ -33,7 +33,7 @@ const projects = [
 const links = [
   {
     label: "Systems Administrator Resume",
-    href: "https://github.com/taylortn/taylortn/tree/main/resume",
+    href: "https://github.com/taylortn/taylortn/blob/main/resume/TaNara_Taylor_SysAdmin_Cloud_Resume.pdf"",
   },
   {
     label: "LinkedIn Profile",

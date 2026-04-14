@@ -1,41 +1,83 @@
-# Ta'Nara N. Taylor
+# Hi, I’m Ta'Nara Taylor 👋🏽
 
-**Systems Administrator | Security-Focused | TS/SCI with CI Poly**
+**Systems Administrator | Active Directory | Linux | AWS | Security-Focused**
 
-I support secure Linux and AWS environments with a focus on patching, system hardening, and vulnerability remediation.
-
----
-
-## 🔗 Quick Links
-
-- 🌐 Portfolio: https://taylortn.github.io  
-- 📄 Systems Admin Resume: https://raw.githubusercontent.com/taylortn/taylortn/root/resume/Tanara_Taylor_System_Admin_Resume.pdf  
-- 🔐 ISSO Resume: (add your corrected link here)  
-- 💼 LinkedIn: https://linkedin.com/in/taylortanara  
-
----
-
-## 🛠️ Technical Focus
-
-- Linux (RHEL)
-- AWS (EC2, EBS, SSM)
-- Vulnerability Management
-- STIG Hardening
-- RMF / Compliance
-- Nessus / Splunk / ServiceNow
+I build and manage secure infrastructure environments with a focus on system administration, automation, and vulnerability management.
 
 ---
 
 ## 🚀 Featured Projects
 
-### Cloud Linux Automation Lab
-Automated AWS-based Linux environment using Terraform and Ansible  
-https://github.com/taylortn/cloud-linux-automation-lab
+### 🖥️ Windows Server Active Directory Lab
+Built and configured a full Active Directory environment including AD DS, DNS, user management, and troubleshooting.
 
-### DevSecOps Vulnerability Lab
-End-to-end vulnerability management workflow  
-https://github.com/taylortn/devsecops-vulnerability-lab
+🔗 https://github.com/taylortn/windows-server-active-directory-lab
 
-### DevOps CI/CD Pipeline Lab
-CI/CD pipeline using GitHub Actions and Docker  
-https://github.com/taylortn/devops-cicd-pipeline-lab
+---
+
+### ⚙️ Cloud Linux Automation Lab
+Automated Linux system administration tasks using Ansible, Bash scripting, and infrastructure automation.
+
+🔗 https://github.com/taylortn/cloud-linux-automation-lab
+
+---
+
+### 🔐 DevSecOps Vulnerability Lab
+Implemented vulnerability scanning and remediation workflows using Linux patching and security automation.
+
+🔗 https://github.com/taylortn/devsecops-vulnerability-lab
+
+---
+
+### 🔁 CI/CD Pipeline Lab
+Built a CI/CD pipeline using GitHub Actions, Docker, and Linux for automated deployment.
+
+🔗 https://github.com/taylortn/devops-cicd-pipeline-lab
+
+---
+
+### 📊 Power BI IT Operations Dashboard
+Developed an interactive dashboard to visualize system performance and IT operations data.
+
+🔗 https://github.com/taylortn/powerbi-it-operations-dashboard
+
+---
+
+### 🤖 Cloud Support AI Chatbot
+Created an AI-powered chatbot to simulate IT troubleshooting and automation workflows.
+
+🔗 https://github.com/taylortn/cloud-support-ai-chatbot
+
+---
+
+## 🧠 Skills & Tools
+
+- Active Directory (AD DS, DNS, Group Policy)
+- Windows Server Administration
+- Linux System Administration
+- AWS Cloud (EC2, S3, IAM)
+- Ansible, Bash Scripting
+- Docker, CI/CD (GitHub Actions)
+- Vulnerability Management & Security
+
+---
+
+## 🌐 Portfolio
+
+🔗 https://taylortn.github.io
+
+---
+
+## 📈 Currently Working On
+
+- Building a client machine and joining it to Active Directory
+- Expanding hands-on system administration labs
+- Strengthening cloud and security automation skills
+
+---
+
+## 🤝 Let’s Connect
+
+If you're working in IT or building your skills, feel free to connect with me.
+
+🔗 https://www.linkedin.com/in/taylortanara

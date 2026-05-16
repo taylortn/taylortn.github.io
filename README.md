@@ -8,13 +8,13 @@ I build and manage secure infrastructure environments with a focus on system adm
 
 ## 🚀 Featured Projects
 
-### Title: AI Cloud Security Remediation Copilot
-Category: DevSecOps / Cloud Security / AI
-Description:
+### AI Cloud Security Remediation Copilot
+
 Built a DevSecOps remediation dashboard that analyzes Checkov IaC scan reports, prioritizes findings by severity, and provides remediation guidance through a FastAPI backend and React frontend.
 
-Tech: FastAPI, React, Python, JavaScript, Checkov, GitHub Actions
-Links: GitHub repo + screenshot
+**Tech:** FastAPI, React, Python, JavaScript, Checkov, GitHub Actions  
+🔗 https://github.com/taylortn/ai-cloud-security-copilot
+![AI Cloud Security Remediation Copilot dashboard](https://raw.githubusercontent.com/taylortn/ai-cloud-security-copilot/main/docs/dashboard.png)
 
 ### 🖥️ Windows Server Active Directory Lab
 Built and configured a full Active Directory environment including AD DS, DNS, user management, and troubleshooting.

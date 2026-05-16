@@ -251,6 +251,9 @@ a {
 }
 
 .mini-tags span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #faf7fb;
   color: #7c4d88;
   border: 1px solid #ead7df;
@@ -486,6 +489,10 @@ a {
 }
 
 .tech-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
   background: #fff8f2;
   border: 1px solid #fde2c7;
   color: #6b3b00;
@@ -493,6 +500,7 @@ a {
   border-radius: 999px;
   font-weight: 700;
   font-size: 12px;
+  text-align: center;
 }
 
 .project-actions {

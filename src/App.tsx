@@ -52,12 +52,13 @@ const certifications = [
 
 const experience = [
   {
-    role: "Systems Administrator",
+    role: "Technical Architecture Specialist",
     org: "Accenture Federal Services | Office of Naval Intelligence",
-    dates: "Sept 2023 – Present",
+    dates: "Sept 2023 – Feb 2026",
     points: [
       "Support secure Linux and AWS-hosted environments in mission-focused settings.",
       "Perform patching, troubleshooting, vulnerability remediation, and system hardening.",
+      "Manage and maintain Google Classroom environments, including course organization, user access support, content updates, and digital learning design.",
       "Work with tools and processes aligned to secure operations and compliance expectations.",
     ],
   },

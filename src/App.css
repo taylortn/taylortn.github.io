@@ -334,6 +334,10 @@ a {
 }
 
 .skill-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
   border: 1px solid #e2e8f0;
   background: #f8fafc;
   border-radius: 18px;
@@ -341,6 +345,7 @@ a {
   font-size: 14px;
   font-weight: 600;
   color: #1e293b;
+  text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 

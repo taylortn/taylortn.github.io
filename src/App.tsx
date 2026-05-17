@@ -244,7 +244,9 @@ export default function App() {
                 <img src={profileImage} alt="Ta'Nara Taylor Professional Photo" />
               </div>
 
-              <div className="floating-monogram" aria-hidden="true">TT</div>
+              <div className="floating-monogram" aria-hidden="true">
+                <span>TT</span>
+              </div>
 
               <div className="snapshot-card">
                 <p className="eyebrow">Professional Snapshot</p>
@@ -322,11 +324,7 @@ export default function App() {
 
             <div className="skills-orbit" aria-hidden="true">
               <div className="globe">
-                <span>
-                  Skills
-                  <br />
-                  <small>World</small>
-                </span>
+                <img src="./images/pinkglobe.jpg" alt="Skills Globe" />
               </div>
 
               <div className="orbit-tags">

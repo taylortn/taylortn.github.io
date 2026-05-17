@@ -145,7 +145,13 @@ export default function App() {
     <div className="site">
       <nav className="navbar">
         <div className="container nav-inner">
-          <a href="#top" className="brand"><span className="brand-mark">TT</span><span>Ta&apos;Nara Taylor</span></a>
+          <a href="#top" className="brand-lockup" aria-label="Ta'Nara Taylor home">
+            <span className="brand-monogram" aria-hidden="true">
+              <span className="brand-letter">T</span>
+              <span className="brand-letter">T</span>
+            </span>
+            <span>Ta&apos;Nara Taylor</span>
+          </a>
 
           <div className="nav-links">
             <a href="#about">About</a>
@@ -154,9 +160,14 @@ export default function App() {
             <a href="#skills-world">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#certifications">Certifications</a>
-            <a href="#contact">Contact</a><a href="#contact" className="nav-cta">Let&apos;s Connect</a></div>
+            <a href="#contact">Contact</a>
         </div>
-      </nav>
+        <a href="#contact" className="nav-cta">
+          <span>Let&apos;s Connect</span>
+          <span className="nav-cta-icon" aria-hidden="true">✦</span>
+        </a>
+      </div>
+    </nav>
 
       <section className="hero" id="top">
         <div className="hero-glow hero-glow-left"></div>
@@ -165,7 +176,13 @@ export default function App() {
 
         <div className="container hero-grid">
           <div className="hero-text fade-in-up">
-            <div className="pill">Systems Administrator • Cloud Operations • Security-Focused</div>
+            <div className="hero-kicker">
+  <span>Systems Administrator</span>
+  <span className="hero-dot">•</span>
+  <span>Cloud</span>
+  <span className="hero-dot">•</span>
+  <span>Security Focused</span>
+</div>
             <h1>Ta&apos;Nara<br />Taylor <span aria-hidden="true" className="hero-spark">✦</span></h1>
             <p className="hero-description">
               I build, support, and secure cloud and infrastructure environments while bringing
@@ -516,3 +533,4 @@ export default function App() {
     </div>
   );
 }
+

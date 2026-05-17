@@ -221,14 +221,14 @@ export default function App() {
             <div className="portrait-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
             <div className="profile-photo-wrap">
               <img
-  src={profileImage}
-  alt="Ta'Nara Taylor Professional Photo"
-  className="profile-photo"
-/>
+                src={profileImage}
+                alt="Ta'Nara Taylor Professional Photo"
+                className="profile-photo"
+              />
             </div>
 
             <div className="profile-card polished">
-              <p className="eyebrow eyebrow-green">Professional Snapshot</p>
+              <p className="eyebrow eyebrow-gold profile-eyebrow">Professional Snapshot</p>
               <h2>Infrastructure-minded. Security-focused.</h2>
               <p className="profile-summary">
                 Systems administration, cloud operations, vulnerability remediation, and workflow
@@ -242,7 +242,6 @@ export default function App() {
                 <span>Compliance</span>
                 <span>Documentation</span>
               </div>
-              <div className="signature-line">Cloud-ready. Security-aware. Detail-led.</div>
             </div>
           </div>
         </div>

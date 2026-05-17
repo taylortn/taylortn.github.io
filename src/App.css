@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Corinthia:wght@400;700&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
 
 :root {
   --bg-primary: #fffaf7;
@@ -2402,4 +2402,92 @@ a {
 
 .hero-text h1 {
   margin-top: 0.4rem;
+}
+/* Requested hero/profile refinements */
+.hero-subline {
+  font-family: "Brittany Signature", "Brittany", "Corinthia", "Allura", "Brush Script MT", "Segoe Script", cursive;
+  font-size: 4rem;
+  line-height: 0.95;
+  color: rgba(207, 130, 125, 0.92);
+  margin: 1.15rem 0 2rem;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.hero-grid {
+  grid-template-columns: minmax(0, 0.94fr) minmax(460px, 1.06fr);
+  gap: 6rem;
+}
+
+.hero-profile .profile-photo-wrap {
+  width: min(100%, 500px);
+  height: 465px;
+  border-radius: 2.2rem 2.2rem 1.4rem 1.4rem;
+}
+
+.hero-profile .profile-card {
+  width: min(92%, 440px);
+  margin-top: -84px;
+  padding: 2rem 2.2rem;
+}
+
+.hero-profile .profile-eyebrow,
+.hero-profile .profile-card .eyebrow {
+  color: var(--gold-deep);
+  letter-spacing: 0.26em;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.hero-profile .profile-card h2 {
+  margin-top: 0.55rem;
+  font-size: 2.35rem;
+  line-height: 1.05;
+}
+
+.hero-profile .profile-summary {
+  margin-top: 0.85rem;
+  max-width: 34rem;
+  font-weight: 500;
+}
+
+.hero-profile .mini-tags {
+  margin-top: 1.35rem;
+}
+
+@media (max-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-subline {
+    font-size: 3.35rem;
+  }
+
+  .hero-profile .profile-photo-wrap {
+    width: min(100%, 440px);
+    height: 430px;
+  }
+
+  .hero-profile .profile-card {
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-subline {
+    font-size: 2.65rem;
+  }
+
+  .hero-profile .profile-photo-wrap {
+    width: min(100%, 340px);
+    height: 355px;
+  }
+
+  .hero-profile .profile-card {
+    width: min(96%, 340px);
+    margin-top: -42px;
+    padding: 1.45rem;
+  }
 }

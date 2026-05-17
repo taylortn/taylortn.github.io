@@ -84,6 +84,14 @@ const experience = [
   },
 ];
 
+const leadershipPoints = [
+  "Designed, managed, and maintained Google Classroom environments for intake and member education programs.",
+  "Organized digital learning materials, assignments, announcements, testing workflows, and resource sections for new initiates.",
+  "Supported intake operations by improving communication, tracking, and documentation across Google Classroom, Google Forms, Google Sheets, and Gmail.",
+  "Helped create a structured virtual learning experience for initiates, Big Sisters, and committee leadership.",
+  "Maintained digital classroom updates, assignment visibility, access support, and content organization throughout the intake process.",
+];
+
 const resumeLinks = [
   {
     label: "📄 Systems Administrator Resume",
@@ -118,6 +126,7 @@ export default function App() {
           <div className="nav-links">
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
+            <a href="#leadership">Leadership</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#certifications">Certifications</a>
@@ -133,13 +142,11 @@ export default function App() {
 
         <div className="container hero-grid">
           <div className="hero-text fade-in-up">
-            <div className="pill">Systems Administrator • Security-Focused • TS/SCI with CI Poly</div>
+            <div className="pill">Custom Software Engineer | Cloud Operations | Security-Focused System Administration</div>
             <h1>Ta&apos;Nara Taylor</h1>
-            <div className="hero-role">Custom Software Engineer | Cloud Operations | Security-Focused System Administration</div>
             <p className="hero-description">
-              I support secure Linux and AWS environments with a focus on
-              patching, hardening, vulnerability remediation, and operational
-              stability in high-security spaces.
+              I build, support, and secure cloud and infrastructure environments while bringing
+              structure, documentation, and operational discipline to every system I touch.
             </p>
 
             <p className="hero-subline">Targeting Cloud Engineering, DevSecOps, and Security Operations roles.</p>
@@ -170,7 +177,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="profile-panel fade-in-up delay-1">
+          <div className="profile-panel hero-profile fade-in-up delay-1">
             <div className="profile-photo-wrap">
               <img
                 src="https://taylortn.github.io/assets/Profile.png"
@@ -180,14 +187,11 @@ export default function App() {
             </div>
 
             <div className="profile-card polished">
-              <h2>Professional Snapshot</h2>
+              <p className="eyebrow eyebrow-green">Professional Snapshot</p>
+              <h2>Infrastructure-minded. Security-focused.</h2>
               <p className="profile-summary">
-                I build, support, and secure cloud and infrastructure environments while bringing
-                structure, documentation, and operational discipline to every system I touch.
-              </p>
-              <p>
-                Systems administration, vulnerability remediation, security operations support,
-                and secure cloud-hosted infrastructure.
+                Systems administration, cloud operations, vulnerability remediation, and workflow
+                ownership for secure, well-documented environments.
               </p>
 
               <div className="mini-tags">
@@ -195,6 +199,7 @@ export default function App() {
                 <span>AWS</span>
                 <span>Security</span>
                 <span>Compliance</span>
+                <span>Documentation</span>
               </div>
             </div>
           </div>
@@ -220,32 +225,6 @@ export default function App() {
             </p>
           </div>
 
-          <div className="card fade-in-up" id="leadership">
-            <p className="eyebrow eyebrow-gold">Leadership & Digital Operations</p>
-            <h2>National Intake Committee Executive Assistant</h2>
-            <p className="body-text">Sigma Chi Psi Sorority, Incorporated</p>
-            <ul className="body-text">
-              <li>
-                Designed, managed, and maintained Google Classroom environments for intake and member education programs.
-              </li>
-              <li>
-                Organized digital learning materials, assignments, announcements, testing workflows, and resource sections for new initiates.
-              </li>
-              <li>
-                Supported intake operations by improving communication, tracking, and documentation across Google Classroom, Google Forms, Google Sheets, and Gmail.
-              </li>
-              <li>
-                Helped create a structured virtual learning experience for initiates, Big Sisters, and committee leadership.
-              </li>
-              <li>
-                Maintained digital classroom updates, assignment visibility, access support, and content organization throughout the intake process.
-              </li>
-            </ul>
-            <p className="body-text">
-              Led digital operations with an emphasis on platform administration, process ownership, and scalable training workflows transferable to IT operations and platform support.
-            </p>
-          </div>
-
           <div className="card fade-in-up delay-1" id="skills">
             <p className="eyebrow eyebrow-green">Technical Skills</p>
             <h2>Built for secure environments</h2>
@@ -253,6 +232,36 @@ export default function App() {
               {skills.map((skill) => (
                 <div key={skill} className="skill-chip">
                   {skill}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section leadership-section" id="leadership">
+        <div className="container">
+          <div className="card leadership-card fade-in-up">
+            <div className="leadership-header">
+              <div>
+                <p className="eyebrow eyebrow-gold">Leadership & Digital Operations</p>
+                <h2>Platform administration beyond the server room</h2>
+              </div>
+              <div className="role-badge">
+                <span>National Intake Committee Executive Assistant</span>
+                <strong>Sigma Chi Psi Sorority, Incorporated</strong>
+              </div>
+            </div>
+
+            <p className="leadership-summary">
+              This work reflects operational ownership across digital learning systems, intake
+              coordination, documentation, access support, and repeatable virtual training workflows.
+            </p>
+
+            <div className="leadership-grid">
+              {leadershipPoints.map((point) => (
+                <div key={point} className="operation-item">
+                  {point}
                 </div>
               ))}
             </div>

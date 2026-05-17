@@ -1,4 +1,5 @@
 import "./App.css";
+import profileImage from "./Profile.png";
 
 const skills = [
   "Linux (RHEL)",
@@ -7,6 +8,31 @@ const skills = [
   "STIG Hardening",
   "RMF / Compliance",
   "Nessus / Splunk / ServiceNow",
+];
+
+const skillCloud = [
+  "AWS",
+  "Linux (RHEL)",
+  "Cloud Operations",
+  "System Administration",
+  "Security Operations",
+  "Vulnerability Management",
+  "RMF / Compliance",
+  "STIG Hardening",
+  "Nessus",
+  "Splunk",
+  "ServiceNow",
+  "Documentation",
+  "Automation",
+  "GitHub Actions",
+  "Terraform",
+  "Ansible",
+  "Google Classroom Management",
+  "Digital Learning Support",
+  "Training Coordination",
+  "Workflow Support",
+  "Project Support",
+  "Troubleshooting",
 ];
 
 const projects = [
@@ -119,19 +145,16 @@ export default function App() {
     <div className="site">
       <nav className="navbar">
         <div className="container nav-inner">
-          <a href="#top" className="brand">
-            Ta&apos;Nara Taylor
-          </a>
+          <a href="#top" className="brand"><span className="brand-mark">TT</span><span>Ta&apos;Nara Taylor</span></a>
 
           <div className="nav-links">
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#leadership">Leadership</a>
-            <a href="#skills">Skills</a>
+            <a href="#skills-world">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#certifications">Certifications</a>
-            <a href="#contact">Contact</a>
-          </div>
+            <a href="#contact">Contact</a><a href="#contact" className="nav-cta">Let&apos;s Connect</a></div>
         </div>
       </nav>
 
@@ -142,14 +165,14 @@ export default function App() {
 
         <div className="container hero-grid">
           <div className="hero-text fade-in-up">
-            <div className="pill">Custom Software Engineer | Cloud Operations | Security-Focused System Administration</div>
-            <h1>Ta&apos;Nara Taylor</h1>
+            <div className="pill">Systems Administrator • Cloud Operations • Security-Focused</div>
+            <h1>Ta&apos;Nara<br />Taylor <span aria-hidden="true" className="hero-spark">✦</span></h1>
             <p className="hero-description">
               I build, support, and secure cloud and infrastructure environments while bringing
               structure, documentation, and operational discipline to every system I touch.
             </p>
 
-            <p className="hero-subline">Targeting Cloud Engineering, DevSecOps, and Security Operations roles.</p>
+            <p className="hero-subline">Building secure systems. Empowering people.</p>
 
             <div className="hero-buttons">
               <a
@@ -177,13 +200,14 @@ export default function App() {
             </div>
           </div>
 
-          <div className="profile-panel hero-profile fade-in-up delay-1">
+          <div className="profile-panel hero-profile portrait-stage polished-portrait fade-in-up delay-1">
+            <div className="portrait-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
             <div className="profile-photo-wrap">
               <img
-                src="https://taylortn.github.io/assets/Profile.png"
-                alt="Ta'Nara Taylor Professional Photo"
-                className="profile-photo"
-              />
+  src={profileImage}
+  alt="Ta'Nara Taylor Professional Photo"
+  className="profile-photo"
+/>
             </div>
 
             <div className="profile-card polished">
@@ -194,13 +218,14 @@ export default function App() {
                 ownership for secure, well-documented environments.
               </p>
 
-              <div className="mini-tags">
+                            <div className="mini-tags">
                 <span>Linux</span>
                 <span>AWS</span>
                 <span>Security</span>
                 <span>Compliance</span>
                 <span>Documentation</span>
               </div>
+              <div className="signature-line">Cloud-ready. Security-aware. Detail-led.</div>
             </div>
           </div>
         </div>
@@ -228,11 +253,43 @@ export default function App() {
           <div className="card fade-in-up delay-1" id="skills">
             <p className="eyebrow eyebrow-green">Technical Skills</p>
             <h2>Built for secure environments</h2>
-            <div className="skills-grid">
+                        <div className="skills-grid">
               {skills.map((skill) => (
                 <div key={skill} className="skill-chip">
                   {skill}
                 </div>
+              ))}
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section className="section skills-world-section" id="skills-world">
+        <div className="container skills-world-grid">
+          <div className="skills-world-copy fade-in-up">
+            <p className="eyebrow eyebrow-gold">My Skills World</p>
+            <h2>A world of skills. Built for impact.</h2>
+            <p className="body-text">
+              From cloud to compliance, operations to documentation, these skills support
+              the way I build, troubleshoot, secure, and organize every environment I touch.
+            </p>
+            <p className="signature-line large-signature">Ta&apos;Nara Taylor</p>
+          </div>
+
+          <div className="skills-orbit-wrap fade-in-up delay-1" aria-label="Skills cloud">
+            <div className="skills-globe">
+              <div className="globe-shine"></div>
+              <div className="globe-ring ring-one"></div>
+              <div className="globe-ring ring-two"></div>
+              <div className="globe-ring ring-three"></div>
+              <span className="globe-core-text">Skills<br /><small>World</small></span>
+            </div>
+
+            <div className="orbit-tags">
+              {skillCloud.map((skill, index) => (
+                <span key={skill} className={`orbit-tag tag-${index + 1}`}>
+                  {skill}
+                </span>
               ))}
             </div>
           </div>

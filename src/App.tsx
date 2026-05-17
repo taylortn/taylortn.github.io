@@ -1,4 +1,4 @@
-import "./App.css";
+import './App.css';
 import profileImage from "./Profile.png";
 
 const skills = [
@@ -170,82 +170,103 @@ export default function App() {
     </nav>
 
       <section className="hero" id="top">
-        <div className="hero-glow hero-glow-left"></div>
-        <div className="hero-glow hero-glow-right"></div>
-        <div className="hero-glow hero-glow-bottom"></div>
+  <div className="hero-glow hero-glow-left"></div>
+  <div className="hero-glow hero-glow-right"></div>
+  <div className="hero-glow hero-glow-bottom"></div>
 
-        <div className="container hero-grid">
-          <div className="hero-text fade-in-up">
-            <div className="hero-kicker">
-  <span>Systems Administrator</span>
-  <span className="hero-dot">•</span>
-  <span>Cloud</span>
-  <span className="hero-dot">•</span>
-  <span>Security Focused</span>
-</div>
-            <h1>Ta&apos;Nara<br />Taylor <span aria-hidden="true" className="hero-spark">✦</span></h1>
-            <p className="hero-description">
-              I build, support, and secure cloud and infrastructure environments while bringing
-              structure, documentation, and operational discipline to every system I touch.
-            </p>
+  <div className="container hero-grid">
+    <div className="hero-text fade-in-up">
+      <div className="hero-kicker">
+        <span>Systems Administrator</span>
+        <span className="hero-dot">•</span>
+        <span>Cloud</span>
+        <span className="hero-dot">•</span>
+        <span>Security Focused</span>
+      </div>
 
-            <p className="hero-subline">Building secure systems. Empowering people.</p>
+      <h1>
+        Ta&apos;Nara
+        <br />
+        Taylor <span aria-hidden="true" className="hero-spark">✦</span>
+      </h1>
 
-            <div className="hero-buttons">
-              <a
-                className="button button-dark"
-                href="https://github.com/taylortn/ai-cloud-security-copilot"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View AI Security Project
-              </a>
-              <a
-                className="button button-light"
-                href="https://raw.githubusercontent.com/taylortn/taylortn/root/resume/Tanara_Taylor_System_Admin_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download Resume
-              </a>
-              <a
-                className="button button-gold"
-                href="#contact"
-              >
-                Contact Me
-              </a>
-            </div>
-          </div>
+      <p className="hero-script">Building secure systems. Empowering people.</p>
 
-          <div className="profile-panel hero-profile portrait-stage polished-portrait fade-in-up delay-1">
-            <div className="portrait-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
-            <div className="profile-photo-wrap">
-              <img
-                src={profileImage}
-                alt="Ta'Nara Taylor Professional Photo"
-                className="profile-photo"
-              />
-            </div>
+      <p className="hero-description">
+        I build, support, and secure cloud and infrastructure environments while
+        bringing structure, documentation, and operational discipline to every
+        system I touch.
+      </p>
 
-            <div className="profile-card polished">
-              <p className="eyebrow eyebrow-gold profile-eyebrow">Professional Snapshot</p>
-              <h2>Infrastructure-minded. Security-focused.</h2>
-              <p className="profile-summary">
-                Systems administration, cloud operations, vulnerability remediation, and workflow
-                ownership for secure, well-documented environments.
-              </p>
+      <ul className="hero-focus-list">
+        <li>Systems Administration</li>
+        <li>Cloud Operations</li>
+        <li>Security Operations</li>
+        <li>DevSecOps</li>
+        <li>Digital Learning Support</li>
+      </ul>
 
-                            <div className="mini-tags">
-                <span>Linux</span>
-                <span>AWS</span>
-                <span>Security</span>
-                <span>Compliance</span>
-                <span>Documentation</span>
-              </div>
-            </div>
-          </div>
+      <div className="hero-actions">
+        <a
+          href="/TaNara-Nicole-Taylor-Optimized-Resume.pdf"
+          className="button button-dark resume-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View My Resume <span className="resume-icon">📄</span>
+        </a>
+
+        <a className="button button-outline" href="#projects">
+          Explore Projects <span aria-hidden="true">↗</span>
+        </a>
+
+        <a className="button button-gold" href="#contact">
+          Get In Touch <span aria-hidden="true">♡</span>
+        </a>
+      </div>
+    </div>
+
+    <div className="profile-panel hero-profile portrait-stage polished-portrait fade-in-up delay-1">
+      <div className="portrait-orbit" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div className="profile-photo-wrap">
+        <img
+          src={profileImage}
+          alt="Ta'Nara Taylor Professional Photo"
+          className="profile-photo"
+        />
+      </div>
+
+      <div className="profile-card polished">
+        <p className="eyebrow eyebrow-gold profile-eyebrow">Professional Snapshot</p>
+
+        <h2>
+          Infrastructure-minded.
+          <br />
+          Security-focused. People-driven.
+        </h2>
+
+        <p className="profile-summary">
+          I bridge systems, security, and support to create reliable, scalable,
+          and human-centered environments.
+        </p>
+
+        <div className="mini-tags">
+          <span>Linux</span>
+          <span>AWS</span>
+          <span>Security</span>
+          <span>Compliance</span>
+          <span>Documentation</span>
+          <span>Automation</span>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section className="section" id="about">
         <div className="container two-column">

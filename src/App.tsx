@@ -551,12 +551,14 @@ export default function App() {
               </form>
 
               <div className="direct-contact">
-                <strong>Direct Contact</strong>
-                <br><span>tanara.taylor@yahoo.com</span>
-                <span>linkedin.com/in/taylortanara</span>
-                <span>github.com/taylortn</span>
-                </br>
-              </div>
+  <strong>Direct Contact</strong>
+
+  <div className="direct-contact-links">
+    <span>tanara.taylor@yahoo.com</span>
+    <span>linkedin.com/in/taylortanara</span>
+    <span>github.com/taylortn</span>
+  </div>
+</div>
             </article>
           </div>
         </section>

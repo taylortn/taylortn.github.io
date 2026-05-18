@@ -35,6 +35,7 @@ const projects = [
       'DevSecOps-focused tool that analyzes scan findings, prioritizes risks, and provides remediation guidance.',
     tech: ['DevSecOps', 'React', 'Python', 'Checkov', 'GitHub Actions'],
     href: 'https://github.com/taylortn/ai-cloud-security-copilot',
+    icon: 'lock',
     featured: true,
   },
   {
@@ -43,6 +44,7 @@ const projects = [
       'Automated AWS-based Linux environment focused on provisioning, patching, and repeatable operations.',
     tech: ['AWS', 'Bash', 'Terraform'],
     href: 'https://github.com/taylortn/cloud-linux-automation-lab',
+    icon: 'cloud',
   },
   {
     title: 'DevSecOps Vulnerability Lab',
@@ -50,6 +52,7 @@ const projects = [
       'Hands-on vulnerability workflow covering identification, remediation, verification, and hardening.',
     tech: ['Nessus', 'Splunk', 'Security'],
     href: 'https://github.com/taylortn/devsecops-vulnerability-lab',
+    icon: 'shield',
   },
   {
     title: 'DevOps CI/CD Pipeline Lab',
@@ -57,14 +60,55 @@ const projects = [
       'Pipeline project using GitHub Actions and Docker to improve deployment consistency.',
     tech: ['GitHub Actions', 'Docker', 'CI/CD'],
     href: 'https://github.com/taylortn/devops-cicd-pipeline-lab',
+    icon: 'workflow',
   },
 ];
+
+function ProjectIcon({ type }: { type: string }) {
+  if (type === 'lock') {
+    return (
+      <svg viewBox="0 0 24 24" focusable="false">
+        <rect x="6" y="10" width="12" height="10" rx="2" />
+        <path d="M8.5 10V7.8a3.5 3.5 0 0 1 7 0V10" />
+        <path d="M12 14v2.5" />
+      </svg>
+    );
+  }
+
+  if (type === 'cloud') {
+    return (
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path d="M7.5 18h9.2a4.3 4.3 0 0 0 .4-8.6 6 6 0 0 0-11.2 1.7A3.6 3.6 0 0 0 7.5 18Z" />
+      </svg>
+    );
+  }
+
+  if (type === 'shield') {
+    return (
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path d="M12 3 19 6v5.4c0 4.5-2.9 7.5-7 9.6-4.1-2.1-7-5.1-7-9.6V6Z" />
+        <path d="m9.5 12.4 1.6 1.6 3.7-4" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg viewBox="0 0 24 24" focusable="false">
+      <circle cx="6" cy="7" r="2" />
+      <circle cx="18" cy="7" r="2" />
+      <circle cx="12" cy="17" r="2" />
+      <path d="M8 7h8" />
+      <path d="m7.4 8.7 3.4 6.6" />
+      <path d="m16.6 8.7-3.4 6.6" />
+    </svg>
+  );
+}
 
 const experience = [
   {
     role: 'Technical Architecture Specialist',
-    org: 'Accenture Federal Services | Office of Naval Intelligence',
-    dates: 'Sept 2023 – Present',
+    org: 'Accenture Federal Services | Office of Naval Intelligence (ONI)',
+    dates: 'Sept 2023 – Feb 2026',
     points: [
       'Support secure Linux and AWS-hosted environments in mission-focused settings.',
       'Perform patching, troubleshooting, vulnerability remediation, and system hardening.',
@@ -74,7 +118,7 @@ const experience = [
   },
   {
     role: 'Information System Security Officer (ISSO)',
-    org: 'Tunuva Technologies / Parsons – NRO',
+    org: 'Tunuva Technologies / Parsons –  National Reconnaissance Office (NRO)',
     dates: 'Feb 2022 – Aug 2023',
     points: [
       'Supported continuous monitoring, vulnerability tracking, and remediation efforts.',
@@ -84,7 +128,7 @@ const experience = [
   },
   {
     role: 'Systems Administrator',
-    org: 'Apex Systems / Leidos – NGA',
+    org: 'Apex Systems / Leidos – National Geospatial-Intelligence Agency (NGA)',
     dates: 'May 2019 – Oct 2021',
     points: [
       'Installed, configured, and maintained systems in enterprise environments.',
@@ -324,7 +368,7 @@ export default function App() {
 
             <div className="skills-orbit" aria-hidden="true">
               <div className="globe">
-                <img src="./images/pinkglobe.jpg" alt="Skills Globe" />
+                <img src="/assets/pink%20globe.png" alt="Skills Globe" />
               </div>
 
               <div className="orbit-tags">
@@ -341,16 +385,14 @@ export default function App() {
         <section className="section leadership-section" id="leadership">
           <div className="container leadership-card">
             <div className="leadership-image" aria-hidden="true">
-              <span>Purpose</span>
-              <span>People</span>
-              <span>Process</span>
+              <img src="/assets/leadership.png" alt="Leadership & Digital Operations" />
             </div>
 
             <div className="leadership-content">
               <p className="eyebrow">Leadership & Digital Operations</p>
               <h2>Leading with systems. Serving with purpose.</h2>
               <p>
-                I combine operational excellence with a heart for people—leading digital
+                I combine operational excellence with a heart for people, leading digital
                 learning initiatives, documentation, coordination, and support that drive clarity and results.
               </p>
 
@@ -399,7 +441,7 @@ export default function App() {
                 {projects.map((project) => (
                   <article key={project.title} className={project.featured ? 'project featured' : 'project'}>
                     <div className="project-icon" aria-hidden="true">
-                      {project.featured ? '▣' : '◇'}
+                      <ProjectIcon type={project.icon} />
                     </div>
 
                     <div>
@@ -439,9 +481,7 @@ export default function App() {
             </div>
 
             <div className="quote-card" aria-hidden="true">
-              <span>Discipline</span>
-              <span>Clarity</span>
-              <span>Excellence</span>
+              <img src="/certification.png" alt="Certifications & Growth" />
             </div>
           </div>
         </section>
@@ -503,8 +543,10 @@ export default function App() {
 
       <footer className="footer">
         <div className="container footer-inner">
-          <span className="brand-monogram" aria-hidden="true">TT</span>
-          <p>© 2026 Ta&apos;Nara Taylor</p>
+          <div className="footer-brand">
+            <span className="brand-monogram" aria-hidden="true">TT</span>
+            <p>© 2026 Ta&apos;Nara Taylor</p>
+          </div>
           <p>Systems Administrator | Cloud • Security • People ♡</p>
         </div>
       </footer>

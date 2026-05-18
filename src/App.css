@@ -432,7 +432,7 @@ backdrop-filter: blur(16px);
 padding: 34px; 
 }
 
-.card h2, .leadership-content h2, .contact-card h2, .skills-world-copy h2 { 
+.card h3, .leadership-content h3, .contact-card h3, .skills-world-copy h3 { 
 margin: 0 0 18px; 
 color: var(--navy); 
 font-family: 'Playfair Display', Georgia, serif; 

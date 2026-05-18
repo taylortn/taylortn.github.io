@@ -356,7 +356,7 @@ export default function App() {
 
             <article className="card" id="skills">
               <p className="eyebrow eyebrow-with-star">Technical Skills</p>
-              <h2>Built for secure environments</h2>
+              <h3>Built for secure environments</h3>
 
               <div className="skills-grid">
                 {technicalSkills.map((skill) => (
@@ -410,7 +410,7 @@ export default function App() {
 
             <div className="leadership-content">
               <p className="eyebrow eyebrow-with-star">Leadership & Digital Operations</p>
-              <h2>Leading with systems. Serving with purpose.</h2>
+              <h3>Leading with systems. Serving with purpose.</h3>
               <p>
                 I combine operational excellence with a heart for people, leading digital
                 learning initiatives, documentation, coordination, and support that drive clarity and results.
@@ -433,7 +433,7 @@ export default function App() {
           <div className="container split-grid">
             <section className="card" id="experience">
               <p className="eyebrow eyebrow-with-star">Professional Experience</p>
-              <h2>Work that reflects real-world systems support</h2>
+              <h3>Work that reflects real-world systems support</h3>
 
               <div className="timeline">
                 {experience.map((job) => (

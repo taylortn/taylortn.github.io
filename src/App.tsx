@@ -341,7 +341,7 @@ export default function App() {
           <div className="container two-column">
             <article className="card">
               <p className="eyebrow eyebrow-with-star">About Me</p>
-              <h2>Grounded in systems. Growing in cyber.</h2>
+              <h3>Grounded in systems. Growing in cyber.</h3>
               <p>
                 I bring hands-on experience across Linux administration, AWS support,
                 patch management, vulnerability remediation, and secure operations.

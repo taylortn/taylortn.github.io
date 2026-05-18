@@ -175,7 +175,7 @@ const resumeLinks = [
   {
     label: 'ISSO / Cyber Resume',
     note: 'Open or download directly from my hosted files.',
-    href: 'https://raw.githubusercontent.com/taylortn/taylortn/root/resume/Taylor%20Resume%20ISSO.pdf',
+    href: 'https://raw.githubusercontent.com/taylortn/taylortn/root/resume/ISSO Resume.pdf',
   },
 ];
 
@@ -389,7 +389,7 @@ export default function App() {
             </div>
 
             <div className="leadership-content">
-              <p className="eyebrow">Leadership & Digital Operations</p>
+              <p className="eyebrow eyebrow-with-star">Leadership & Digital Operations</p>
               <h2>Leading with systems. Serving with purpose.</h2>
               <p>
                 I combine operational excellence with a heart for people, leading digital
@@ -412,8 +412,8 @@ export default function App() {
         <section className="section split-section">
           <div className="container split-grid">
             <section className="card" id="experience">
-              <p className="eyebrow">Professional Experience</p>
-              <h2>Work that reflects real-world systems support</h2>
+              <p className="eyebrow eyebrow-with-star">Professional Experience</p>
+                <h2>Work that reflects real-world systems support</h2>
 
               <div className="timeline">
                 {experience.map((job) => (
@@ -434,7 +434,7 @@ export default function App() {
             </section>
 
             <section className="card" id="projects">
-              <p className="eyebrow">Featured Projects</p>
+             <p className="eyebrow eyebrow-with-star">Featured Projects</p>
               <h2>Projects that show the hands-on side</h2>
 
               <div className="project-list">
@@ -471,7 +471,7 @@ export default function App() {
         <section className="section" id="certifications">
           <div className="container card wide-card">
             <div>
-              <p className="eyebrow">Certifications</p>
+              <p className="eyebrow eyebrow-with-star">Certifications</p>
               <h2>Validated knowledge. Ongoing growth.</h2>
               <div className="cert-grid">
                 {certifications.map((cert) => (
@@ -489,7 +489,7 @@ export default function App() {
         <section className="section contact-section" id="contact">
           <div className="container two-column">
             <article className="card">
-              <p className="eyebrow">Resume & Downloads</p>
+              <p className="eyebrow eyebrow-with-star">Resume & Downloads</p>
               <h2>Choose the version that fits the conversation.</h2>
 
               <div className="resume-list">
@@ -513,7 +513,7 @@ export default function App() {
             </article>
 
             <article className="contact-card">
-              <p className="eyebrow">Let&apos;s Connect</p>
+              <p className="eyebrow eyebrow-with-star">Let&apos;s Connect</p>
               <h2>Let&apos;s start the conversation.</h2>
 
               <form
@@ -532,9 +532,11 @@ export default function App() {
 
               <div className="direct-contact">
                 <strong>Direct Contact</strong>
-                <span>tanara.taylor@yahoo.com</span>
+                <br> <span>tanara.taylor@yahoo.com</span>
                 <span>linkedin.com/in/taylortanara</span>
                 <span>github.com/taylortn</span>
+                </br>
+               
               </div>
             </article>
           </div>

@@ -64,46 +64,6 @@ const projects = [
   },
 ];
 
-function ProjectIcon({ type }: { type: string }) {
-  if (type === 'lock') {
-    return (
-      <svg viewBox="0 0 24 24" focusable="false">
-        <rect x="6" y="10" width="12" height="10" rx="2" />
-        <path d="M8.5 10V7.8a3.5 3.5 0 0 1 7 0V10" />
-        <path d="M12 14v2.5" />
-      </svg>
-    );
-  }
-
-  if (type === 'cloud') {
-    return (
-      <svg viewBox="0 0 24 24" focusable="false">
-        <path d="M7.5 18h9.2a4.3 4.3 0 0 0 .4-8.6 6 6 0 0 0-11.2 1.7A3.6 3.6 0 0 0 7.5 18Z" />
-      </svg>
-    );
-  }
-
-  if (type === 'shield') {
-    return (
-      <svg viewBox="0 0 24 24" focusable="false">
-        <path d="M12 3 19 6v5.4c0 4.5-2.9 7.5-7 9.6-4.1-2.1-7-5.1-7-9.6V6Z" />
-        <path d="m9.5 12.4 1.6 1.6 3.7-4" />
-      </svg>
-    );
-  }
-
-  return (
-    <svg viewBox="0 0 24 24" focusable="false">
-      <circle cx="6" cy="7" r="2" />
-      <circle cx="18" cy="7" r="2" />
-      <circle cx="12" cy="17" r="2" />
-      <path d="M8 7h8" />
-      <path d="m7.4 8.7 3.4 6.6" />
-      <path d="m16.6 8.7-3.4 6.6" />
-    </svg>
-  );
-}
-
 const experience = [
   {
     role: 'Technical Architecture Specialist',
@@ -118,7 +78,7 @@ const experience = [
   },
   {
     role: 'Information System Security Officer (ISSO)',
-    org: 'Tunuva Technologies / Parsons –  National Reconnaissance Office (NRO)',
+    org: 'Tunuva Technologies / Parsons – National Reconnaissance Office (NRO)',
     dates: 'Feb 2022 – Aug 2023',
     points: [
       'Supported continuous monitoring, vulnerability tracking, and remediation efforts.',
@@ -190,6 +150,76 @@ const quickLinks = [
   },
 ];
 
+function ProjectIcon({ type }: { type: string }) {
+  if (type === 'lock') {
+    return (
+      <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+        <rect x="6" y="10" width="12" height="10" rx="2" />
+        <path d="M8.5 10V7.8a3.5 3.5 0 0 1 7 0V10" />
+        <path d="M12 14v2.5" />
+      </svg>
+    );
+  }
+
+  if (type === 'cloud') {
+    return (
+      <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+        <path d="M7.5 18h9.2a4.3 4.3 0 0 0 .4-8.6 6 6 0 0 0-11.2 1.7A3.6 3.6 0 0 0 7.5 18Z" />
+      </svg>
+    );
+  }
+
+  if (type === 'shield') {
+    return (
+      <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+        <path d="M12 3 19 6v5.4c0 4.5-2.9 7.5-7 9.6-4.1-2.1-7-5.1-7-9.6V6Z" />
+        <path d="m9.5 12.4 1.6 1.6 3.7-4" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+      <circle cx="6" cy="7" r="2" />
+      <circle cx="18" cy="7" r="2" />
+      <circle cx="12" cy="17" r="2" />
+      <path d="M8 7h8" />
+      <path d="m7.4 8.7 3.4 6.6" />
+      <path d="m16.6 8.7-3.4 6.6" />
+    </svg>
+  );
+}
+
+function DocumentIcon() {
+  return (
+    <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+      <path d="M7 3h7l5 5v13H7z" />
+      <path d="M14 3v6h5" />
+      <path d="M9 14h6" />
+      <path d="M9 18h4" />
+    </svg>
+  );
+}
+
+function ExternalIcon() {
+  return (
+    <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+      <path d="M7 17 17 7" />
+      <path d="M10 7h7v7" />
+      <path d="M6 7v11h11" />
+    </svg>
+  );
+}
+
+function MailIcon() {
+  return (
+    <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+      <path d="M4 7h16v10H4z" />
+      <path d="m4 8 8 6 8-6" />
+    </svg>
+  );
+}
+
 export default function App() {
   return (
     <div className="site">
@@ -250,34 +280,22 @@ export default function App() {
                   rel="noopener noreferrer"
                 >
                   View My Resume
-                  <span className="button-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" focusable="false">
-                      <path d="M7 3h7l5 5v13H7z" />
-                      <path d="M14 3v6h5" />
-                      <path d="M9 14h6" />
-                      <path d="M9 18h4" />
-                    </svg>
+                  <span className="button-icon">
+                    <DocumentIcon />
                   </span>
                 </a>
 
                 <a href="#projects" className="button button-light">
                   Explore Projects
-                  <span className="button-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" focusable="false">
-                      <path d="M7 17 17 7" />
-                      <path d="M10 7h7v7" />
-                      <path d="M6 7v11h11" />
-                    </svg>
+                  <span className="button-icon">
+                    <ExternalIcon />
                   </span>
                 </a>
 
                 <a href="#contact" className="button button-rose">
                   Get in Touch
-                  <span className="button-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" focusable="false">
-                      <path d="M4 7h16v10H4z" />
-                      <path d="m4 8 8 6 8-6" />
-                    </svg>
+                  <span className="button-icon">
+                    <MailIcon />
                   </span>
                 </a>
               </div>
@@ -293,12 +311,14 @@ export default function App() {
               </div>
 
               <div className="snapshot-card">
-                <p className="eyebrow">Professional Snapshot</p>
-                <h2>
+                <p className="eyebrow eyebrow-with-star">Professional Snapshot</p>
+                <h4>
                   Infrastructure-minded.
                   <br />
-                  Security-focused. People-driven.
-                </h2>
+                  Security-focused.
+                  <br />
+                  People-driven.
+                </h4>
                 <p>
                   I bridge systems, security, and support to create reliable, scalable,
                   and human-centered environments.
@@ -320,7 +340,7 @@ export default function App() {
         <section className="section" id="about">
           <div className="container two-column">
             <article className="card">
-              <p className="eyebrow">About Me</p>
+              <p className="eyebrow eyebrow-with-star">About Me</p>
               <h2>Grounded in systems. Growing in cyber.</h2>
               <p>
                 I bring hands-on experience across Linux administration, AWS support,
@@ -335,7 +355,7 @@ export default function App() {
             </article>
 
             <article className="card" id="skills">
-              <p className="eyebrow">Technical Skills</p>
+              <p className="eyebrow eyebrow-with-star">Technical Skills</p>
               <h2>Built for secure environments</h2>
 
               <div className="skills-grid">
@@ -368,7 +388,7 @@ export default function App() {
 
             <div className="skills-orbit" aria-hidden="true">
               <div className="globe">
-                <img src="/assets/pink%20globe.png" alt="Skills Globe" />
+                <img src="/assets/pink%20globe.png" alt="" />
               </div>
 
               <div className="orbit-tags">
@@ -385,7 +405,7 @@ export default function App() {
         <section className="section leadership-section" id="leadership">
           <div className="container leadership-card">
             <div className="leadership-image" aria-hidden="true">
-              <img src="/assets/leadership.png" alt="Leadership & Digital Operations" />
+              <img src="/assets/leadership.png" alt="" />
             </div>
 
             <div className="leadership-content">
@@ -413,7 +433,7 @@ export default function App() {
           <div className="container split-grid">
             <section className="card" id="experience">
               <p className="eyebrow eyebrow-with-star">Professional Experience</p>
-                <h2>Work that reflects real-world systems support</h2>
+              <h2>Work that reflects real-world systems support</h2>
 
               <div className="timeline">
                 {experience.map((job) => (
@@ -434,13 +454,13 @@ export default function App() {
             </section>
 
             <section className="card" id="projects">
-             <p className="eyebrow eyebrow-with-star">Featured Projects</p>
+              <p className="eyebrow eyebrow-with-star">Featured Projects</p>
               <h2>Projects that show the hands-on side</h2>
 
               <div className="project-list">
                 {projects.map((project) => (
                   <article key={project.title} className={project.featured ? 'project featured' : 'project'}>
-                    <div className="project-icon" aria-hidden="true">
+                    <div className="project-icon">
                       <ProjectIcon type={project.icon} />
                     </div>
 
@@ -481,7 +501,7 @@ export default function App() {
             </div>
 
             <div className="quote-card" aria-hidden="true">
-              <img src="/certification.png" alt="Certifications & Growth" />
+              <img src="/certification.png" alt="" />
             </div>
           </div>
         </section>
@@ -532,11 +552,10 @@ export default function App() {
 
               <div className="direct-contact">
                 <strong>Direct Contact</strong>
-                <br> <span>tanara.taylor@yahoo.com</span>
+                <br><span>tanara.taylor@yahoo.com</span>
                 <span>linkedin.com/in/taylortanara</span>
                 <span>github.com/taylortn</span>
                 </br>
-               
               </div>
             </article>
           </div>

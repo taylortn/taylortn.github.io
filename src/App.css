@@ -864,30 +864,16 @@ right: 0;
   white-space: nowrap; 
 }
 
-.wide-card { 
-  display: grid; 
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 380px); 
-  gap: 34px; 
-  align-items: stretch; 
+.wide-card {
   min-height: 310px;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 #certifications h2 { 
   font-size: clamp(28px, 3vw, 40px); 
 }
 
-.quote-card { 
-  min-height: 100%; 
-  align-self: stretch;
-  border-radius: 24px; 
-  background:
-    linear-gradient(90deg, rgba(255, 250, 245, 0.34), rgba(255, 250, 245, 0.08)),
-    url('/certification.png') center / cover no-repeat;
-  overflow: hidden; 
-  box-shadow: inset 0 0 0 1px rgba(201, 152, 75, 0.18); 
-}
 
 .contact-section { 
   padding-top: 36px; 
@@ -1109,4 +1095,22 @@ right: 0;
   .project.featured .tech-list { flex-wrap: wrap; }
   .wide-card { overflow: visible; }
   .footer-inner { flex-direction: column; text-align: center; }
+}
+
+/*Certifications*/
+.quote-card {
+  min-height: 100%;
+  align-self: stretch;
+  border-radius: 24px;
+  background:
+    linear-gradient(90deg, rgba(255, 250, 245, 0.3), rgba(25, 20, 25, 0.08)),
+    url("/certification.png") center / cover no-repeat;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(21, 15, 7, 0.18);
+}
+
+.certifications-content {
+  position: relative;
+  z-index: 2;
+  max-width: 72%;
 }

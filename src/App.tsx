@@ -340,7 +340,7 @@ export default function App() {
         <section className="section" id="about">
           <div className="container two-column">
             <article className="card">
-              <p className="eyebrow eyebrow-with-star">About Me</p>
+              <p className="eyebrow eyebrow-with-star"><span aria-hidden="true">✦</span>About Me</p>
               <h3>Grounded in systems. Growing in cyber.</h3>
               <p>
                 I bring hands-on experience across Linux administration, AWS support,
@@ -355,7 +355,7 @@ export default function App() {
             </article>
 
             <article className="card" id="skills">
-              <p className="eyebrow eyebrow-with-star">Technical Skills</p>
+              <p className="eyebrow eyebrow-with-star"><span aria-hidden="true">✦</span>Technical Skills</p>
               <h3>Built for secure environments</h3>
 
               <div className="skills-grid">
@@ -409,7 +409,7 @@ export default function App() {
             </div>
 
             <div className="leadership-content">
-              <p className="eyebrow eyebrow-with-star">Leadership & Digital Operations</p>
+              <p className="eyebrow eyebrow-with-star"><span aria-hidden="true">✦</span>Leadership & Digital Operations</p>
               <h3>Leading with systems. Serving with purpose.</h3>
               <p>
                 I combine operational excellence with a heart for people, leading digital
@@ -432,7 +432,7 @@ export default function App() {
         <section className="section split-section">
           <div className="container split-grid">
             <section className="card" id="experience">
-              <p className="eyebrow eyebrow-with-star">Professional Experience</p>
+              <p className="eyebrow eyebrow-with-star"><span aria-hidden="true">✦</span>Professional Experience</p>
               <h3>Work that reflects real-world systems support</h3>
 
               <div className="timeline">
@@ -454,7 +454,7 @@ export default function App() {
             </section>
 
             <section className="card" id="projects">
-              <p className="eyebrow eyebrow-with-star">Featured Projects</p>
+              <p className="eyebrow eyebrow-with-star"><span aria-hidden="true">✦</span>Featured Projects</p>
               <h2>Projects that show the hands-on side</h2>
 
               <div className="project-list">
@@ -491,7 +491,7 @@ export default function App() {
         <section className="section" id="certifications">
           <div className="container card wide-card">
             <div>
-              <p className="eyebrow eyebrow-with-star">Certifications</p>
+              <p className="eyebrow eyebrow-with-star"><span aria-hidden="true">✦</span>Certifications</p>
               <h2>Validated knowledge. Ongoing growth.</h2>
               <div className="cert-grid">
                 {certifications.map((cert) => (
@@ -509,7 +509,7 @@ export default function App() {
         <section className="section contact-section" id="contact">
           <div className="container two-column">
             <article className="card">
-              <p className="eyebrow eyebrow-with-star">Resume & Downloads</p>
+              <p className="eyebrow eyebrow-with-star"><span aria-hidden="true">✦</span>Resume & Downloads</p>
               <h2>Choose the version that fits the conversation.</h2>
 
               <div className="resume-list">
@@ -533,7 +533,7 @@ export default function App() {
             </article>
 
             <article className="contact-card">
-              <p className="eyebrow eyebrow-with-star">Let&apos;s Connect</p>
+              <p className="eyebrow eyebrow-with-star"><span aria-hidden="true">✦</span>Let&apos;s Connect</p>
               <h2>Let&apos;s start the conversation.</h2>
 
               <form

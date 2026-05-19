@@ -979,9 +979,10 @@ right: 0;
 
 .direct-contact-links {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 10px 18px;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
 }
 
 .direct-contact-links span {
@@ -992,8 +993,8 @@ right: 0;
 
 .direct-contact-links span:not(:last-child)::after {
   content: "•";
-  color: var(--gold-soft);
-  margin-left: 18px;
+  margin-left: 0.75rem;
+  color: #c99a45;
 }
 
 .direct-contact span + span::before { 

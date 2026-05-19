@@ -65,37 +65,49 @@ const projects = [
 ];
 
 const experience = [
-  {
-    role: 'Technical Architecture Specialist',
-    org: 'Accenture Federal Services | Office of Naval Intelligence (ONI)',
-    dates: 'Sept 2023 – Feb 2026',
-    points: [
-      'Support secure Linux and AWS-hosted environments in mission-focused settings.',
-      'Perform patching, troubleshooting, vulnerability remediation, and system hardening.',
-      'Manage Google Classroom environments, including access support, content updates, and digital learning design.',
-      'Work with tools and processes aligned to secure operations and compliance expectations.',
-    ],
-  },
-  {
-    role: 'Information System Security Officer (ISSO)',
-    org: 'Tunuva Technologies / Parsons – National Reconnaissance Office (NRO)',
-    dates: 'Feb 2022 – Aug 2023',
-    points: [
-      'Supported continuous monitoring, vulnerability tracking, and remediation efforts.',
-      'Maintained documentation and artifacts supporting secure and compliant environments.',
-      'Coordinated with technical teams to strengthen security posture and readiness.',
-    ],
-  },
-  {
-    role: 'Systems Administrator',
-    org: 'Apex Systems / Leidos – National Geospatial-Intelligence Agency (NGA)',
-    dates: 'May 2019 – Oct 2021',
-    points: [
-      'Installed, configured, and maintained systems in enterprise environments.',
-      'Resolved service tickets and supported users across daily operations.',
-      'Assisted with system updates, maintenance, and performance improvement efforts.',
-    ],
-  },
+{
+role: 'National Intake Committee Executive Assistant',
+org: 'Sigma Chi Psi Sorority, Incorportated',
+dates: 'Sept 2023 – Present',
+points: [
+  'Manage Google Classroom environments, including access support, content updates, and digital learning design.',
+  'Work with tools and processes aligned to secure operations and compliance expectations.',
+  'Contribute to documentation, process improvement, and operational support efforts.',
+  'Track intake progress, assignment completion, exam status, and participation using Google Sheets and intake trackers.',
+  'Support the National Intake Committee with weekly intake operations, communication, documentation, and recap preparation',
+  'Respond to initiate questions and provide clear guidance on deadlines, classroom navigation, assignments, and intake expectations.',
+  'Assist with organizing intake tasks, workshops, quizzes, good deed submissions, line activities, and final crossover preparation.',
+],
+},
+{
+role: 'Technical Architecture Specialist',
+org: 'Accenture Federal Services | Office of Naval Intelligence (ONI)',
+dates: 'Sept 2023 – Feb 2026',
+points: [
+  'Support secure Linux and AWS-hosted environments in mission-focused settings.',
+  'Perform patching, troubleshooting, vulnerability remediation, and system hardening.',
+  ],
+},
+{
+role: 'Information System Security Officer (ISSO)',
+org: 'Tunuva Technologies / Parsons – National Reconnaissance Office (NRO)',
+dates: 'Feb 2022 – Aug 2023',
+points: [
+  'Supported continuous monitoring, vulnerability tracking, and remediation efforts.',
+  'Maintained documentation and artifacts supporting secure and compliant environments.',
+  'Coordinated with technical teams to strengthen security posture and readiness.',
+],
+},
+{
+role: 'Systems Administrator',
+org: 'Apex Systems / Leidos – National Geospatial-Intelligence Agency (NGA)',
+dates: 'May 2019 – Oct 2021',
+points: [
+  'Installed, configured, and maintained systems in enterprise environments.',
+  'Resolved service tickets and supported users across daily operations.',
+  'Assisted with system updates, maintenance, and performance improvement efforts.'
+],
+},
 ];
 
 const leadershipCards = [
@@ -135,7 +147,7 @@ const resumeLinks = [
   {
     label: 'ISSO / Cyber Resume',
     note: 'Open or download directly from my hosted files.',
-    href: 'https://raw.githubusercontent.com/taylortn/taylortn/root/resume/ISSO Resume.pdf',
+    href: 'href: 'https://raw.githubusercontent.com/taylortn/taylortn/main/resume/ISSO%20Resume.pdf',
   },
 ];
 

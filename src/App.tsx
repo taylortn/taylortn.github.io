@@ -26,7 +26,7 @@ const technicalSkills = [
   'Vulnerability Management',
   'STIG Hardening',
   'RMF / Compliance',
-  'Nessus / Splunk / ServiceNow',
+  'Nessus / Security Center / ServiceNow',
 ];
 
 const projects = [
@@ -508,20 +508,22 @@ export default function App() {
         </section>
 
         <section className="section" id="certifications">
-          <div className="container card wide-card">
-            <div>
-              <p className="eyebrow eyebrow-with-star"><span aria-hidden="true">✦</span>Certifications</p>
-              <h2>Validated knowledge. Ongoing growth.</h2>
-              <div className="cert-grid">
-                {certifications.map((cert) => (
-                  <span key={cert}>{cert}</span>
-                ))}
-              </div>
-            </div>
+  <div className="container card wide-card certifications-card">
+    <div className="certifications-content">
+      <p className="eyebrow eyebrow-with-star">
+        <span aria-hidden="true">✦</span> Certifications
+      </p>
 
-            <div className="quote-card" aria-hidden="true" />
-          </div>
-        </section>
+      <h2>Validated knowledge. Ongoing growth.</h2>
+
+      <div className="cert-grid">
+        {certifications.map((cert) => (
+          <span key={cert}>{cert}</span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
         <section className="section contact-section" id="contact">
           <div className="container two-column">

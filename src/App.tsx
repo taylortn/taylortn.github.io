@@ -1,5 +1,6 @@
 import './App.css';
 import profileImage from './Profile.png';
+import { Linkedin, Github, FileText } from "lucide-react";
 
 const skills = [
   'Linux (RHEL)',
@@ -291,10 +292,11 @@ export default function App() {
 
               <div className="hero-actions">
                 <a
-                  href="/T_Taylor Resume.pdf"
+                  href="/TaNara_Taylor_System_Admin_Resume.pdf"
                   className="button button-dark"
                   target="_blank"
                   rel="noopener noreferrer"
+                  download
                 >
                   View My Resume
                   <span className="button-icon">
@@ -517,9 +519,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className="quote-card" aria-hidden="true">
-              <img src="/certification.png" alt="" />
-            </div>
+            <div className="quote-card" aria-hidden="true" />
           </div>
         </section>
 
@@ -531,7 +531,7 @@ export default function App() {
 
               <div className="resume-list">
                 {resumeLinks.map((resume) => (
-                  <a key={resume.label} href={resume.href} target="_blank" rel="noopener noreferrer">
+                  <a key={resume.label} href={resume.href} target="_blank" rel="noopener noreferrer" download>
                     <div>
                       <strong>{resume.label}</strong>
                       <p>{resume.note}</p>

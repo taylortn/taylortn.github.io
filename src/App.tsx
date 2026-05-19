@@ -1,6 +1,7 @@
 import './App.css';
 import profileImage from './Profile.png';
-import { Linkedin, Github, FileText } from "lucide-react";
+// lucide-react icons were previously imported but are not used in this file.
+// Removed to fix: Module '"lucide-react"' has no exported member 'Linkedin'.
 
 const skills = [
   'Linux (RHEL)',

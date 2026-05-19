@@ -140,7 +140,7 @@ const certifications = [
 
 const resumeLinks = [
   {
-    label: 'System Administrator Resume',
+    label: 'Systems Administrator Resume',
     note: 'Open or download directly from my hosted files.',
     href: '/TaNara_Taylor_System_Admin_Resume.pdf',
   },

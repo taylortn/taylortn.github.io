@@ -140,15 +140,20 @@ const certifications = [
 
 const resumeLinks = [
   {
-    label: 'Systems Administrator Resume',
+    label: 'System Administrator Resume',
     note: 'Open or download directly from my hosted files.',
-    href: '/T_Taylor Resume.pdf',
+    href: '/TaNara_Taylor_System_Admin_Resume.pdf',
   },
   {
-  label: 'ISSO / Cyber Resume',
-  note: 'Open or download directly from my hosted files.',
-  href: '/TaNara_Taylor_ISSO_Resume.pdf',
-},
+    label: 'ISSO / Cyber Resume',
+    note: 'Open or download directly from my hosted files.',
+    href: '/TaNara_Taylor_ISSO_Resume.pdf',
+  },
+  {
+    label: 'Cloud Operations Resume',
+    note: 'Open or download directly from my hosted files.',
+    href: '/TaNara_Taylor_Cloud_Operations_Resume.pdf',
+  },
 ];
 
 const quickLinks = [

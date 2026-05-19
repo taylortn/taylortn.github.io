@@ -142,13 +142,13 @@ const resumeLinks = [
   {
     label: 'Systems Administrator Resume',
     note: 'Open or download directly from my hosted files.',
-    href: 'https://raw.githubusercontent.com/taylortn/taylortn/root/resume/T_Taylor Resume.pdf',
+    href: '/T_Taylor Resume.pdf',
   },
   {
-    label: 'ISSO / Cyber Resume',
-    note: 'Open or download directly from my hosted files.',
-    href: 'href: 'https://raw.githubusercontent.com/taylortn/taylortn/main/resume/ISSO%20Resume.pdf',
-  },
+  label: 'ISSO / Cyber Resume',
+  note: 'Open or download directly from my hosted files.',
+  href: '/TaNara_Taylor_ISSO_Resume.pdf',
+},
 ];
 
 const quickLinks = [

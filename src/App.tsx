@@ -1,7 +1,6 @@
+import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
 import './App.css';
 import profileImage from './Profile.png';
-// lucide-react icons were previously imported but are not used in this file.
-// Removed to fix: Module '"lucide-react"' has no exported member 'Linkedin'.
 
 const skills = [
   'Linux (RHEL)',
@@ -145,16 +144,19 @@ const resumeLinks = [
     label: 'Systems Administrator Resume',
     note: 'Open or download directly from my hosted files.',
     href: '/TaNara_Taylor_System_Admin_Resume.pdf',
+    icon: 'pdf',
   },
   {
     label: 'ISSO / Cyber Resume',
     note: 'Open or download directly from my hosted files.',
     href: '/TaNara_Taylor_ISSO_Resume.pdf',
+    icon: 'pdf',
   },
   {
     label: 'Cloud Operations Resume',
     note: 'Open or download directly from my hosted files.',
     href: '/TaNara_Taylor_Cloud_Operations_Resume.pdf',
+    icon: 'pdf',
   },
 ];
 
@@ -162,12 +164,20 @@ const quickLinks = [
   {
     label: 'LinkedIn Profile',
     href: 'https://linkedin.com/in/taylortanara',
+    icon: 'linkedin',
   },
   {
     label: 'GitHub Profile',
     href: 'https://github.com/taylortn',
+    icon: 'github',
   },
 ];
+
+function QuickLinkIcon({ type }: { type: string }) {
+  if (type === 'linkedin') return <FaLinkedin />;
+  if (type === 'github') return <FaGithub />;
+  return <FaFilePdf />;
+}
 
 function ProjectIcon({ type }: { type: string }) {
   if (type === 'lock') {
@@ -534,21 +544,37 @@ export default function App() {
 
               <div className="resume-list">
                 {resumeLinks.map((resume) => (
-                  <a key={resume.label} href={resume.href} target="_blank" rel="noopener noreferrer" download>
-                    <div>
-                      <strong>{resume.label}</strong>
-                      <p>{resume.note}</p>
-                    </div>
-                    <span>Download ↗</span>
-                  </a>
+                  <a
+  key={resume.label}
+  href={resume.href}
+  target="_blank"
+  rel="noopener noreferrer"
+  download
+>
+  <div className="resume-link-main">
+    <FaFilePdf />
+    <div>
+      <strong>{resume.label}</strong>
+      <p>{resume.note}</p>
+    </div>
+  </div>
+
+  <span>Download ↗</span>
+</a>
                 ))}
 
                 {quickLinks.map((link) => (
-                  <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer">
-                    <strong>{link.label}</strong>
-                    <span>Open ↗</span>
-                  </a>
-                ))}
+  <a
+    key={link.label}
+    href={link.href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="quick-link"
+  >
+    <QuickLinkIcon type={link.icon} />
+    <span>{link.label}</span>
+  </a>
+))}
               </div>
             </article>
 

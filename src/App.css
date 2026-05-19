@@ -1114,3 +1114,30 @@ right: 0;
   z-index: 2;
   max-width: 72%;
 }
+
+/*QuickLinks*/
+
+.quick-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.quick-link svg {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/*Resume*/
+
+.resume-link-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resume-link-main svg {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}

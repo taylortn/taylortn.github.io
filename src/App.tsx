@@ -600,9 +600,13 @@ export default function App() {
   <strong>Direct Contact</strong>
 
   <div className="direct-contact-links">
-    <span>tanara.taylor@yahoo.com</span>
-    <span>linkedin.com/in/taylortanara</span>
-    <span>github.com/taylortn</span>
+    <a href="mailto:tanara.taylor@yahoo.com">tanara.taylor@yahoo.com</a>
+    <a href="https://linkedin.com/in/taylortanara" target="_blank" rel="noopener noreferrer">
+      linkedin.com/in/taylortanara
+    </a>
+    <a href="https://github.com/taylortn" target="_blank" rel="noopener noreferrer">
+      github.com/taylortn
+    </a>
   </div>
 </div>
             </article>

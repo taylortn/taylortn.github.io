@@ -3,14 +3,15 @@ import './App.css';
 import profileImage from './Profile.png';
 
 const skills = [
-  'Linux (RHEL)',
   'AWS',
+  'Linux (RHEL)',
   'Cloud Operations',
   'System Administration',
   'Security Operations',
   'Vulnerability Management',
   'RMF / Compliance',
   'Documentation',
+  'Troubleshooting',
   'Automation',
   'ServiceNow',
   'Google Classroom Management',

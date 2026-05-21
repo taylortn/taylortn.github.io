@@ -870,6 +870,15 @@ right: 0;
   overflow: hidden;
 }
 
+.certifications-card {
+  padding: 36px 34px;
+  min-height: 290px;
+  background:
+    linear-gradient(90deg, rgba(255, 253, 249, 0.98) 0%, rgba(255, 253, 249, 0.94) 46%, rgba(255, 250, 245, 0.66) 64%, rgba(255, 250, 245, 0.1) 100%),
+    url("/certification.png") right center / auto 100% no-repeat,
+    var(--glass);
+}
+
 #certifications h2 { 
   font-size: clamp(28px, 3vw, 40px); 
 }
@@ -1094,6 +1103,16 @@ right: 0;
   .project-icon { display: none; }
   .project.featured .tech-list { flex-wrap: wrap; }
   .wide-card { overflow: visible; }
+  .certifications-card {
+    padding: 30px 24px 220px;
+    background:
+      linear-gradient(180deg, rgba(255, 253, 249, 0.98) 0%, rgba(255, 253, 249, 0.92) 54%, rgba(255, 250, 245, 0.2) 100%),
+      url("/certification.png") right bottom / 360px auto no-repeat,
+      var(--glass);
+  }
+  .certifications-content {
+    max-width: 100%;
+  }
   .footer-inner { flex-direction: column; text-align: center; }
 }
 
@@ -1112,7 +1131,13 @@ right: 0;
 .certifications-content {
   position: relative;
   z-index: 2;
-  max-width: 72%;
+  max-width: 64%;
+}
+
+@media (max-width: 680px) {
+  .certifications-content {
+    max-width: 100%;
+  }
 }
 
 /*QuickLinks*/

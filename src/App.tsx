@@ -231,6 +231,14 @@ function DocumentIcon() {
   );
 }
 
+function ChevronDownIcon() {
+  return (
+    <svg viewBox="0 0 20 20" focusable="false" aria-hidden="true">
+      <path d="M5.75 8.25 10 12.5l4.25-4.25" />
+    </svg>
+  );
+}
+
 function ExternalIcon() {
   return (
     <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
@@ -311,7 +319,9 @@ export default function App() {
                     <span className="button-icon">
                       <DocumentIcon />
                     </span>
-                    <span className="resume-menu-caret" aria-hidden="true">⌄</span>
+                    <span className="resume-menu-caret" aria-hidden="true">
+                      <ChevronDownIcon />
+                    </span>
                   </summary>
 
                   <div className="resume-dropdown" aria-label="Resume options">

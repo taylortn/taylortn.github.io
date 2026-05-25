@@ -303,18 +303,35 @@ export default function App() {
               </ul>
 
               <div className="hero-actions">
-                <a
-                  href="/TaNara_Taylor_System_Admin_Resume.pdf"
-                  className="button button-dark"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download
-                >
-                  View My Resume
-                  <span className="button-icon">
-                    <DocumentIcon />
-                  </span>
-                </a>
+                <details className="resume-menu">
+                  <summary
+                    className="button button-dark resume-menu-trigger"
+                  >
+                    View My Resume
+                    <span className="button-icon">
+                      <DocumentIcon />
+                    </span>
+                    <span className="resume-menu-caret" aria-hidden="true">⌄</span>
+                  </summary>
+
+                  <div className="resume-dropdown" aria-label="Resume options">
+                    {resumeLinks.map((resume) => (
+                      <a
+                        key={resume.label}
+                        href={resume.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        download
+                      >
+                        <FaFilePdf aria-hidden="true" />
+                        <span>
+                          <strong>{resume.label}</strong>
+                          <small>{resume.note}</small>
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                </details>
 
                 <a href="#projects" className="button button-light">
                   Explore Projects
